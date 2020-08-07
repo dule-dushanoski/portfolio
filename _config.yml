@@ -4,8 +4,8 @@ locale: "en-US"
 author: dushko
 logo: "/assets/images/avatar.jpg"
 title: Re-engineering
-url: "https://re-engineering.com" # the base hostname & protocol for your site
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
+url: "https://dule-dushanoski.github.io" # the base hostname & protocol for your site
+# baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
 
 email: dushko.dushanoski@gmail.com
