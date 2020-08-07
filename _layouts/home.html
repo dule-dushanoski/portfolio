@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+    <!-- {{ content }} -->
+    <h2>Testing. Breaking. Re-engineering.</h2>
+    <img src="https://images.unsplash.com/photo-1596714548058-c36b9b828338?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE1NTMxMn0" class="fit image">
+    <p>I find the problems of software quality analysis and improvement more interesting than those of software production.
+       Testing mindset is oriented towards breaking things, rather than building new things.
+       How do I know my work is good enough? What does good mean?</p>
+    <p>That's why I got into SQA.
+       Today, I work with project teams to help them plan Quality Assurance, change control and testing processes.
+       I also assist in product risk analysis, test design and implementation of popular testing techniques.</p>
+    <p>My passion is practicing yoga and mountain hiking.
+       I spend my free time hiking in nature and performing yoga with friends.</p>
+
+    <h2>Get In Touch</h2>
+   	<div class="row">
+   		<div class="col-8 col-12-small">
+   			<form method="post" action="#">
+   				<div class="row gtr-uniform gtr-50">
+   					<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+   					<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+   					<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+   				</div>
+   			</form>
+   			<ul class="actions">
+   				<li><input type="submit" value="Send Message" class="primary" /></li>
+   			</ul>
+   		</div>
+   		<div class="col-4 col-12-small">
+   			<ul class="labeled-icons">
+   				<li>
+   					<h3 class="icon fa-home"><span class="label">Address</span></h3>
+   					Lazar PopTrajkov Rd. 74/21<br />
+   					Skopje<br />
+   					R.Macedonia
+   				</li>
+   				<li>
+   					<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+   					+38970479181
+   				</li>
+   				<li>
+   					<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+   					<a href="#">{{ site.email }}</a>
+   				</li>
+   			</ul>
+   		</div>
+   	</div>
+
+  {%- if site.posts.size > 0 -%}
+    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+    <section class="post-list">
+      <h2 class="post-list-heading">{{ page.list_title | default: "Recent Work" }}</h2>
+      {%- for post in site.posts -%}
+        <hr>
+        <section class="post-list-item">
+          <header>
+            <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="post-meta">{{ post.date | date: date_format }}</p>
+          </header>
+          {%- if site.show_excerpts -%}
+            <div class="post-excerpt">
+              <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              <ul class="actions">
+                <li><a href="{{ post.url | relative_url }}" class="button">Continue Reading</a></li>
+              </ul>
+            </div>
+          {%- endif -%}
+        </section>
+      {%- endfor -%}
+    </section>
+  {%- endif -%}
+
+</div>

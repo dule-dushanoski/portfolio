@@ -1,0 +1,42 @@
+theme: jekyll-theme-strata
+
+locale: "en-US"
+author: dushko
+logo: "/assets/images/avatar.jpg"
+title: Re-engineering
+url: "https://re-engineering.com" # the base hostname & protocol for your site
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
+google_analytics_key: ""
+
+email: dushko.dushanoski@gmail.com
+description: > # this means to ignore newlines until "twitter_username:"
+  The other side of testing.
+twitter_username: dushko100
+github_username: dule-dushanoski
+dribbble_username: ~
+facebook_username: ~
+flickr_username: ~
+instagram_username: ~
+linkedin_username: dushko-dushanoski-94a7b089
+pinterest_username: ~
+youtube_username: ~
+googleplus_username: ~
+rss: false # false to hide rss icon
+
+show_excerpts: false
+date_format: "%b %-d, %Y"
+
+logo: https://picsum.photos/123?image=669
+
+disqus:
+  shortname: my_disqus_shortname
+
+# Build settings
+# theme: jekyll-theme-strata
+# remote_theme: mloberg/strata-jekyll-theme
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
