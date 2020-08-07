@@ -2,7 +2,7 @@ theme: jekyll-theme-strata
 
 locale: "en-US"
 author: dushko
-logo: "/assets/images/avatar.jpg"
+logo: "assets/images/avatar.jpg"
 title: Re-engineering
 url: "https://dule-dushanoski.github.io" # the base hostname & protocol for your site
 baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
